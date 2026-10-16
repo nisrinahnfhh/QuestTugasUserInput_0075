@@ -50,3 +50,18 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 import java.util.TimeZone
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun Act4() {
+
+    var namaDepan by remember { mutableStateOf(value = "") }
+    var namaBelakang by remember { mutableStateOf(value = "") }
+    var email by remember { mutableStateOf(value = "") }
+    var tglLahir by remember { mutableStateOf(value = "") }
+    var experience by remember { mutableStateOf(value = "") }
+    var expanded by remember { mutableStateOf(value = false) }
+
+    var skillAndroid by remember { mutableStateOf(value = false) }
+    var skillUiux by remember { mutableStateOf(value = false) }
+    var skillWeb by remember { mutableStateOf(value = false) }

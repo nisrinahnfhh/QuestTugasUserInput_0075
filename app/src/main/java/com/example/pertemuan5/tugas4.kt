@@ -365,6 +365,15 @@ fun Act4() {
                         )
                     }
 
+                    if (tampilHasil) {
+                        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_medium)))
+                        Column(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .background(colorResource(id = R.color.hitam_card), bentukHasil)
+                                .padding(dimensionResource(id = R.dimen.hasil_padding))
+                        )
+
 
 
 

@@ -380,6 +380,15 @@ fun Act4() {
                                 color = colorResource(id = R.color.putih)
                             )
                             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_small)))
+                            Text(
+                                text = stringResource(
+                                    id = R.string.hasil_nama,
+                                    hasilNamaDepan,
+                                    hasilNamaBelakang
+                                ),
+                                fontSize = dimensionResource(id = R.dimen.hasil_text_size).value.sp,
+                                color = colorResource(id = R.color.putih)
+                            )
 
 
 

@@ -129,6 +129,13 @@ fun Act4() {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(innerPadding)
-        )
+        ) {
+
+            Image(
+                painter = painterResource(id = R.drawable.background),
+                contentDescription = stringResource(id = R.string.cd_background),
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.fillMaxSize()
+            )
 
 

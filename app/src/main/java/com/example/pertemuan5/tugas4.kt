@@ -65,3 +65,7 @@ fun Act4() {
     var skillAndroid by remember { mutableStateOf(value = false) }
     var skillUiux by remember { mutableStateOf(value = false) }
     var skillWeb by remember { mutableStateOf(value = false) }
+
+    var tampilDatePicker by remember { mutableStateOf(value = false) }
+    val datePickerState = rememberDatePickerState()
+    val formatTanggal = stringResource(id = R.string.format_tanggal)

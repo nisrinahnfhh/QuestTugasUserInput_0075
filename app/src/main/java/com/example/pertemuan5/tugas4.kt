@@ -372,7 +372,14 @@ fun Act4() {
                                 .fillMaxWidth()
                                 .background(colorResource(id = R.color.hitam_card), bentukHasil)
                                 .padding(dimensionResource(id = R.dimen.hasil_padding))
-                        )
+                        ) {
+                            Text(
+                                text = stringResource(id = R.string.hasil_judul),
+                                fontSize = dimensionResource(id = R.dimen.hasil_judul_size).value.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = colorResource(id = R.color.putih)
+                            )
+                            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_small)))
 
 
 

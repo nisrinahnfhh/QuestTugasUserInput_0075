@@ -194,5 +194,29 @@ fun Act4() {
                     )
                     Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_large)))
 
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.spacing_small))
+                    ) {
+                        OutlinedTextField(
+                            value = namaDepan,
+                            singleLine = true,
+                            shape = bentukField,
+                            modifier = Modifier.weight(1f),
+                            label = { Text(text = stringResource(id = R.string.nama_depan)) },
+                            onValueChange = { namaDepan = it }
+                        )
+                        OutlinedTextField(
+                            value = namaBelakang,
+                            singleLine = true,
+                            shape = bentukField,
+                            modifier = Modifier.weight(1f),
+                            label = { Text(text = stringResource(id = R.string.nama_belakang)) },
+                            onValueChange = { namaBelakang = it }
+                        )
+                    }
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_medium)))
+
+
 
 

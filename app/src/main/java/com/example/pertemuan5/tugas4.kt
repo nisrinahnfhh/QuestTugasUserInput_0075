@@ -158,4 +158,22 @@ fun Act4() {
                 }
             }
 
+            Box(
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = dimensionResource(id = R.dimen.card_margin_bottom))
+                    .fillMaxWidth()
+                    .shadow(
+                        elevation = dimensionResource(id = R.dimen.card_elevation),
+                        shape = bentukCard
+                    )
+                    .background(colorResource(id = R.color.putih), bentukCard)
+                    .padding(
+                        start = dimensionResource(id = R.dimen.card_padding_horizontal),
+                        end = dimensionResource(id = R.dimen.card_padding_horizontal),
+                        top = dimensionResource(id = R.dimen.card_padding_top),
+                        bottom = dimensionResource(id = R.dimen.card_padding_bottom)
+                    )
+            )
+
 

@@ -358,7 +358,12 @@ fun Act4() {
 
                             tampilHasil = true
                         }
-                    )
+                    ) {
+                        Text(
+                            text = stringResource(id = R.string.proceed),
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
 
 
 

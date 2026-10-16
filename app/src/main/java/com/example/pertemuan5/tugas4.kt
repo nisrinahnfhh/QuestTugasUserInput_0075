@@ -390,6 +390,34 @@ fun Act4() {
                                 color = colorResource(id = R.color.putih)
                             )
 
+                            Text(
+                                text = stringResource(id = R.string.hasil_tgl, hasilTgl),
+                                fontSize = dimensionResource(id = R.dimen.hasil_text_size).value.sp,
+                                color = colorResource(id = R.color.putih)
+                            )
+                            Text(
+                                text = stringResource(id = R.string.hasil_pengalaman, hasilExperience),
+                                fontSize = dimensionResource(id = R.dimen.hasil_text_size).value.sp,
+                                color = colorResource(id = R.color.putih)
+                            )
+                            Text(
+                                text = stringResource(id = R.string.hasil_email, hasilEmail),
+                                fontSize = dimensionResource(id = R.dimen.hasil_text_size).value.sp,
+                                color = colorResource(id = R.color.putih)
+                            )
+                            Text(
+                                text = stringResource(id = R.string.hasil_skill, hasilSkill),
+                                fontSize = dimensionResource(id = R.dimen.hasil_text_size).value.sp,
+                                color = colorResource(id = R.color.putih)
+                            )
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 
 

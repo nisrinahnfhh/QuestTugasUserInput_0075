@@ -307,6 +307,16 @@ fun Act4() {
                                 fontSize = dimensionResource(id = R.dimen.check_text_size).value.sp
                             )
                         }
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Checkbox(
+                                checked = skillUiux,
+                                onCheckedChange = { skillUiux = it }
+                            )
+                            Text(
+                                text = teksUiux,
+                                fontSize = dimensionResource(id = R.dimen.check_text_size).value.sp
+                            )
+                        }
 
 
 

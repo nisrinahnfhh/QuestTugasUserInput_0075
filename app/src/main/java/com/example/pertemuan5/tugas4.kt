@@ -174,6 +174,25 @@ fun Act4() {
                         top = dimensionResource(id = R.dimen.card_padding_top),
                         bottom = dimensionResource(id = R.dimen.card_padding_bottom)
                     )
-            )
+            ) {
+                Column(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Text(
+                        text = stringResource(id = R.string.judul_form),
+                        fontSize = dimensionResource(id = R.dimen.title_size).value.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = colorResource(id = R.color.biru_judul)
+                    )
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_small)))
+                    Text(
+                        text = stringResource(id = R.string.subjudul_form),
+                        fontSize = dimensionResource(id = R.dimen.subtitle_size).value.sp,
+                        color = colorResource(id = R.color.abu_teks),
+                        textAlign = TextAlign.Center
+                    )
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_large)))
+
 
 

@@ -95,3 +95,32 @@ fun Act4() {
     val bentukField = RoundedCornerShape(dimensionResource(id = R.dimen.field_corner))
     val bentukCard = RoundedCornerShape(dimensionResource(id = R.dimen.card_corner))
     val bentukHasil = RoundedCornerShape(dimensionResource(id = R.dimen.hasil_corner))
+
+    if (tampilDatePicker) {
+        DatePickerDialog(
+            onDismissRequest = { tampilDatePicker = false },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        datePickerState.selectedDateMillis?.let { millis ->
+                            val formatter = SimpleDateFormat(formatTanggal, Locale.getDefault())
+                            formatter.timeZone = TimeZone.getTimeZone("UTC")
+                            tglLahir = formatter.format(Date(millis))
+                        }
+                        tampilDatePicker = false
+                    }
+                ) {
+                    Text(text = stringResource(id = R.string.btn_ok))
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { tampilDatePicker = false }) {
+                    Text(text = stringResource(id = R.string.btn_batal))
+                }
+            }
+        ) {
+            DatePicker(state = datePickerState)
+        }
+    }
+
+

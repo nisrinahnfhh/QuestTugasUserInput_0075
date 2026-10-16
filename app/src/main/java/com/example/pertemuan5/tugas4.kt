@@ -250,6 +250,26 @@ fun Act4() {
                             onValueChange = {}
                         )
 
+                        ExposedDropdownMenuBox(
+                            expanded = expanded,
+                            onExpandedChange = { expanded = it },
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            OutlinedTextField(
+                                value = experience,
+                                readOnly = true,
+                                singleLine = true,
+                                shape = bentukField,
+                                modifier = Modifier.menuAnchor(),
+                                label = { Text(text = stringResource(id = R.string.experience)) },
+                                trailingIcon = {
+                                    ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded)
+                                },
+                                onValueChange = {}
+                            )
+
+
+
 
 
 

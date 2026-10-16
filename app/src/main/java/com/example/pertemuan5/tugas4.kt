@@ -317,6 +317,20 @@ fun Act4() {
                                 fontSize = dimensionResource(id = R.dimen.check_text_size).value.sp
                             )
                         }
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Checkbox(
+                                checked = skillWeb,
+                                onCheckedChange = { skillWeb = it }
+                            )
+                            Text(
+                                text = teksWeb,
+                                fontSize = dimensionResource(id = R.dimen.check_text_size).value.sp
+                            )
+                        }
+                    }
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_large)))
+
+
 
 
 

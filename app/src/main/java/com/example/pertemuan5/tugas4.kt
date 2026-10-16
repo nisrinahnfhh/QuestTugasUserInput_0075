@@ -138,4 +138,24 @@ fun Act4() {
                 modifier = Modifier.fillMaxSize()
             )
 
+            Row(
+                modifier = Modifier
+                    .align(Alignment.TopStart)
+                    .padding(dimensionResource(id = R.dimen.dot_padding)),
+                horizontalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.dot_spacing))
+            ) {
+                Box(
+                    modifier = Modifier
+                        .size(dimensionResource(id = R.dimen.dot_size))
+                        .background(colorResource(id = R.color.biru_dot), CircleShape)
+                )
+                repeat(3) {
+                    Box(
+                        modifier = Modifier
+                            .size(dimensionResource(id = R.dimen.dot_size))
+                            .background(colorResource(id = R.color.abu_dot), CircleShape)
+                    )
+                }
+            }
+
 

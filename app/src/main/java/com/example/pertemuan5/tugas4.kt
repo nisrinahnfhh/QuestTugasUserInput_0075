@@ -123,4 +123,12 @@ fun Act4() {
         }
     }
 
+    Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(innerPadding)
+        )
+
 

@@ -343,6 +343,23 @@ fun Act4() {
                             disabledContentColor = colorResource(id = R.color.putih_disabled)
                         ),
 
+                        onClick = {
+                            hasilNamaDepan = namaDepan
+                            hasilNamaBelakang = namaBelakang
+                            hasilTgl = tglLahir
+                            hasilExperience = experience
+                            hasilEmail = email
+
+                            val daftarSkill = mutableListOf<String>()
+                            if (skillAndroid) daftarSkill.add(teksAndroid)
+                            if (skillUiux) daftarSkill.add(teksUiux)
+                            if (skillWeb) daftarSkill.add(teksWeb)
+                            hasilSkill = daftarSkill.joinToString(separator = pemisahSkill)
+
+                            tampilHasil = true
+                        }
+                    )
+
 
 
 

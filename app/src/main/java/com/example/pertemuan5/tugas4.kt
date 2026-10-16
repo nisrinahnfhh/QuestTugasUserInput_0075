@@ -84,3 +84,14 @@ fun Act4() {
     val teksUiux = stringResource(id = R.string.skill_uiux)
     val teksWeb = stringResource(id = R.string.skill_web)
     val pemisahSkill = stringResource(id = R.string.pemisah_skill)
+
+    val formLengkap = namaDepan.isNotEmpty() &&
+            namaBelakang.isNotEmpty() &&
+            email.isNotEmpty() &&
+            tglLahir.isNotEmpty() &&
+            experience.isNotEmpty() &&
+            (skillAndroid || skillUiux || skillWeb)
+
+    val bentukField = RoundedCornerShape(dimensionResource(id = R.dimen.field_corner))
+    val bentukCard = RoundedCornerShape(dimensionResource(id = R.dimen.card_corner))
+    val bentukHasil = RoundedCornerShape(dimensionResource(id = R.dimen.hasil_corner))

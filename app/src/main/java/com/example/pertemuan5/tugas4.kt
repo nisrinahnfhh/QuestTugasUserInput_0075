@@ -330,6 +330,19 @@ fun Act4() {
                     }
                     Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_large)))
 
+                    Button(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(dimensionResource(id = R.dimen.button_height)),
+                        shape = RoundedCornerShape(dimensionResource(id = R.dimen.button_corner)),
+                        enabled = formLengkap,
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = colorResource(id = R.color.biru_tombol),
+                            contentColor = colorResource(id = R.color.putih),
+                            disabledContainerColor = colorResource(id = R.color.abu_disabled),
+                            disabledContentColor = colorResource(id = R.color.putih_disabled)
+                        ),
+
 
 
 

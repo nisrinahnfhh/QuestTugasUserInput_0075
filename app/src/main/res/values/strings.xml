@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Pertemuan 5</string>
+
+    <string name="judul_form">Form Biodata</string>
+    <string name="subjudul_form">Silahkan isi biodata Anda dibawah ini !!!</string>
+    <string name="nama_depan">Nama Depan</string>
+    <string name="nama_belakang">Nama Belakang</string>
+    <string name="email">Email</string>
+    <string name="tgl_lahir">Tgl Lahir</string>
+    <string name="experience">Experience</string>
+    <string name="pilih_skill">Pilih Skill Anda :</string>
+    <string name="skill_android">Android</string>
+    <string name="skill_uiux">UI/UX</string>
+    <string name="skill_web">Web</string>
+    <string name="proceed">Proceed</string>
+    <string name="cd_background">Gambar latar belakang</string>
+    <string name="cd_tanggal">Pilih tanggal</string>
 </resources>

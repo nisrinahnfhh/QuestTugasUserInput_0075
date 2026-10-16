@@ -286,6 +286,13 @@ fun Act4() {
                     }
                     Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_medium)))
 
+                    Text(
+                        text = stringResource(id = R.string.pilih_skill),
+                        fontSize = dimensionResource(id = R.dimen.label_size).value.sp,
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+
 
 
 

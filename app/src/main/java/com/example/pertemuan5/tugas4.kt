@@ -217,6 +217,16 @@ fun Act4() {
                     }
                     Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_medium)))
 
+                    OutlinedTextField(
+                        value = email,
+                        singleLine = true,
+                        shape = bentukField,
+                        modifier = Modifier.fillMaxWidth(),
+                        label = { Text(text = stringResource(id = R.string.email)) },
+                        onValueChange = { email = it }
+                    )
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_medium)))
+
 
 
 

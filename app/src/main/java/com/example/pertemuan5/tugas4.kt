@@ -227,6 +227,29 @@ fun Act4() {
                     )
                     Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_medium)))
 
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.spacing_small))
+                    ) {
+                        OutlinedTextField(
+                            value = tglLahir,
+                            readOnly = true,
+                            singleLine = true,
+                            shape = bentukField,
+                            modifier = Modifier.weight(1f),
+                            label = { Text(text = stringResource(id = R.string.tgl_lahir)) },
+                            trailingIcon = {
+                                Image(
+                                    painter = painterResource(id = R.drawable.ic_calendar),
+                                    contentDescription = stringResource(id = R.string.cd_tanggal),
+                                    modifier = Modifier
+                                        .size(dimensionResource(id = R.dimen.icon_size))
+                                        .clickable { tampilDatePicker = true }
+                                )
+                            },
+                            onValueChange = {}
+                        )
+
 
 
 

@@ -69,3 +69,13 @@ fun Act4() {
     var tampilDatePicker by remember { mutableStateOf(value = false) }
     val datePickerState = rememberDatePickerState()
     val formatTanggal = stringResource(id = R.string.format_tanggal)
+
+    var tampilHasil by remember { mutableStateOf(value = false) }
+    var hasilNamaDepan by remember { mutableStateOf(value = "") }
+    var hasilNamaBelakang by remember { mutableStateOf(value = "") }
+    var hasilTgl by remember { mutableStateOf(value = "") }
+    var hasilExperience by remember { mutableStateOf(value = "") }
+    var hasilEmail by remember { mutableStateOf(value = "") }
+    var hasilSkill by remember { mutableStateOf(value = "") }
+
+    val listExperience = stringArrayResource(id = R.array.experience_list)

@@ -292,6 +292,21 @@ fun Act4() {
                         fontWeight = FontWeight.Bold,
                         modifier = Modifier.fillMaxWidth()
                     )
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Checkbox(
+                                checked = skillAndroid,
+                                onCheckedChange = { skillAndroid = it }
+                            )
+                            Text(
+                                text = teksAndroid,
+                                fontSize = dimensionResource(id = R.dimen.check_text_size).value.sp
+                            )
+                        }
 
 
 

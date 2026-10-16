@@ -79,3 +79,8 @@ fun Act4() {
     var hasilSkill by remember { mutableStateOf(value = "") }
 
     val listExperience = stringArrayResource(id = R.array.experience_list)
+
+    val teksAndroid = stringResource(id = R.string.skill_android)
+    val teksUiux = stringResource(id = R.string.skill_uiux)
+    val teksWeb = stringResource(id = R.string.skill_web)
+    val pemisahSkill = stringResource(id = R.string.pemisah_skill)
